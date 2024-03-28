@@ -56,3 +56,38 @@ nav {
     width: 30px; /* Tamaño de los iconos */
     height: auto; /* Para mantener la proporción */
 }
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    flex-grow: 0; /* Permite que la barra de búsqueda ocupe todo el espacio restante */
+    margin-right: 10px; /* Espacio entre la barra de búsqueda y los iconos */
+    display: flex; /* Usa el modelo de caja flexible */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.search-bar img {
+    cursor: pointer;
+    width: 20px; /* Tamaño del icono de búsqueda */
+    height: auto; /* Para mantener la proporción */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.search-bar input {
+    
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 5px; /* Ajuste del espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ffffff; /* Borde gris */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+
+/* Estilo para ocultar el campo de entrada de texto inicialmente */
+#search-input {
+    display: none;
+}
+
+/* Estilo para mostrar el campo de entrada de texto cuando se hace clic en el icono de búsqueda */
+#search-input.show {
+    display: inline-block;
+}

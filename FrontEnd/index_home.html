@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpaceFace</title>
     <link rel="stylesheet" href="styles/style_home.css">
+    <script src="logics_pages/logic_home.js" defer></script>
 </head>
 <body>
     <header>
@@ -13,9 +14,13 @@
                 <a href="#"><img src="logo.png" alt="SpaceFace Logo"></a>
                 <span>SpaceFace</span>
             </div>
+            <div class = "search-bar">
+                <img src="logos/search_icon.png" alt="Icono de busqueda" id="search-icon">
+                <input type="text" placeholder="Buscar..." id="search-input">
+            </div>
             <div class="right-section">
                 <a href="index_profile.html"><button class="profile-button"><img src="logos/profile_icon.png" alt="Icono de Perfil"></button></a>
-                <button class="messages-button"><img src="logos/messages_icon.png" alt="Icono de Mensajes"></button>
+                <a href="index_messages.html"><button class="messages-button"><img src="logos/messages_icon.png" alt="Icono de Mensajes"></button></a>
                 <button class="logout-button"><img src="logos/logOut_icon.png" alt="Cerrar Sesión" id="logout-button"></button>
             </div>
         </nav>
