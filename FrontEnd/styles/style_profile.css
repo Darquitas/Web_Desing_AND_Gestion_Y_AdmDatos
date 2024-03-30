@@ -58,11 +58,41 @@ nav {
 }
 
 
+/* Estilos para los elementos de información */
+.info {
+    display: flex;
+    justify-content: end ;
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    cursor: pointer;
+    margin-right: 20px; /* Ajusta la distancia horizontal entre los elementos */
+}
+
+.info-item:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento para evitar un espacio adicional */
+}
+
+.info-item img {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.info-item span {
+    font-size: 16px;
+}
+
+
 /*Botones para subir fotos*/
 #upload-button , #file-select-button {
     width: 120px;
     height: 40px;
     color: #fff;
+    cursor: pointer;
     background-color: aqua;
     border: none;
 }
@@ -73,4 +103,29 @@ nav {
 
 #file-select-button + span {
     margin-left: 10px;
+}
+
+.selected-files-container span{
+    display: block;
+}
+
+
+/*Apartado donde van las fotos*/
+main {
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.mainCont_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: repeat(5, auto);
+    gap: 2%;
+    height: auto;
+}
+
+.mainCont_grid div > img {
+    width: 100%;
+    cursor: pointer;
 }
