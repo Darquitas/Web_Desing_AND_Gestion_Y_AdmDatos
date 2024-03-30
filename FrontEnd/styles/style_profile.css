@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 /* Estilos para el encabezado */
 header {
     background-color: #acceee;
@@ -56,4 +55,22 @@ nav {
 .right-section button img {
     width: 30px; /* Tamaño de los iconos */
     height: auto; /* Para mantener la proporción */
+}
+
+
+/*Botones para subir fotos*/
+#upload-button , #file-select-button {
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background-color: aqua;
+    border: none;
+}
+
+#file-input{
+    display: none;
+}
+
+#file-select-button + span {
+    margin-left: 10px;
 }
