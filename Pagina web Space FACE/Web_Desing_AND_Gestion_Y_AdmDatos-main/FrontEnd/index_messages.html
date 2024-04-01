@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="styles/style_messages.css">
+    <script src="logics_pages/logic_home.js" defer></script>
+    <script src="https://kit.fontawesome.com/bbabc02c0b.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="messages-body">
+    <header>
+        <nav>
+            <div class="left-section">
+                <a><img data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" src="logos/messages_icon.png" alt="Esta es la sección de los Mensajes"></a>
+                <span> <i class="fa-regular fa-comment"></i> Mensajería</span>
+            </div>
+            <div class="right-section">
+                <a href="index_home.html"><button class="home-button"><img src="logos/home_icon.png" alt=""></button></a>
+                <button class="logout-button"><img src="logos/logOut_icon.png" alt="Cerrar Sesión" id="logout-button"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="inbox">
+            <div class="message">
+                <div class="message-header">
+                    <span class="sender">Juan Perez</span>
+                    <span class="date">Hoy</span>
+                    <span class="notification">Nuevo</span> <!-- Notificación de mensaje no leído -->
+                </div>
+                <div class="message-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="message">
+                <div class="message-header">
+                    <span class="sender">María González</span>
+                    <span class="date">Ayer</span>
+                    <span class="notification">Visto por ti</span> <!-- Notificación de mensaje visto por ti -->
+                </div>
+                <div class="message-content">
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <!-- Más mensajes aquí -->
+        </section>
+    </main>
+    <i class="fa-solid fa-rocket"></i>
+</body>
+</html>

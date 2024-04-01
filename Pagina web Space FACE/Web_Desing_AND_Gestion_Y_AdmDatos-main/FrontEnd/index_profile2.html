@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="styles/style_profile.css">
+    <script src="logics_pages/logic_profile.js" defer></script>
+    <link rel="stylesheet" href="styles/style_index_profile2.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-section">
+                <a><img src="logos/profile_icon.png" alt="Aca debe ir la imagen del perfil"></a>
+                <span>Aca va el nombre del Perfil</span>
+            </div>
+            <div class="right-section">
+                <a href="index_profile.html"><button class="principal-profile-button"><img src="logos/profile_icon.png" alt=""></button></a>
+                <a href="index_home.html"><button class="home-button"><img src="logos/home_icon.png" alt=""></button></a>
+                <a href="index_messages.html"><button class="messages-button"><img src="logos/messages_icon.png" alt="Icono de Mensajes"></button></a>
+                <button class="logout-button"><img src="logos/logOut_icon.png" alt="Cerrar Sesión" id="logout-button"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Mi galeria</h1>
+        <div class="info">
+            <div class="info-item">
+                <img src="logos/add_friend_icon.png" alt="Ícono de solicitudes">
+                <span>Solicitudes</span>
+            </div>
+            <div class="info-item">
+                <img src="logos/cantidad_publicaciones_icon.png" alt="Ícono de cantidad de publicaciones">
+                <span>Publicaciones</span>
+            </div>
+            <div class="info-item">
+                <img src="logos/friends_icon.png" alt="Ícono de amigos">
+                <span>Amigos</span>
+            </div>
+        </div>
+        <input type="file" name="img" id="file-input" multiple>
+        <button id="file-select-button">Elegir foto</button><span>No has subido ninguna foto? Sube una aqui</span>
+
+        <button id="upload-button">Subir foto</button>
+
+        <div class="selected.files-container">
+            <span>Archivos a subir</span>
+            <span class="selected-files"></span>
+        </div>
+    </main>
+</body>
+</html>
